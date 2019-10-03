@@ -23,7 +23,16 @@
 #define TRUE  1
 #define FALSE 0
 typedef char BOOL;
+typedef char bool;
 
+typedef char  byte_t;
+typedef char  int8_t;
+typedef short int16_t;
+typedef long  int32_t;
+
+typedef unsigned char  uint8_t;
+typedef unsigned short uint16_t;
+typedef unsigned long  uint32_t;
 //
 #define st_va
 
@@ -48,5 +57,13 @@ typedef char* va_list;
 #endif
 
 // 
+
+#ifndef __asm__
+
+#define __asm__(asmcode) __asm asmcode __endasm
+
+#endif
+
+
 
 #endif

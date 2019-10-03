@@ -18,5 +18,6 @@ extern Complex cpadd(const Complex* A,const Complex* B);
 extern __cdecl Complex cpsadd(const Complex* n,...);
 extern Complex cpmulConst(const Complex* c,float n);
 extern Complex cpmul(const Complex* A,const Complex* B);
+extern Complex cpconj(const Complex* c);
 
 #endif

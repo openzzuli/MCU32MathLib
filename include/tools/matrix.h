@@ -8,17 +8,15 @@
 #ifndef __MATRIX__
 #define __MATRIX__
 struct Matrix{
-	int rows;
+  int rows;
 	int cols;
-	float* data;
+  float* data;
 };
 typedef struct Matrix Matrix;
 #endif
 
-#define SUCCESS     0
-#define ERROR_CODE  1
 #define IRREVERSIBLE 0x000c
- 
+
 extern Matrix createMatrix(const int rows,const int cols,float* data);
 extern void __add(Matrix *result,const Matrix* A,const Matrix* B);
 extern int add(Matrix *result,const Matrix* A,const Matrix* B);

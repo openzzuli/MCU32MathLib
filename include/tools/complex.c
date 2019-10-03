@@ -62,3 +62,10 @@ Complex cpmul(const Complex* A,const Complex* B)
 	return ret;
 }
 
+Complex cpconj(const Complex* c)
+{
+	Complex ret = {
+		c->a,-c->bi
+	};
+	return ret;
+}

@@ -6,8 +6,12 @@
 #endif
 #define NULL_POINTER  0xfffe
 
+#define SUCCESS     0
+#define ERROR_CODE  1
+
 #define ERROR(_TYPE,_INFO,_RET) (_RET)
 #define ERROR_RET(_RET) (_RET)
+
 
 #define __BIT(_N) (__BIT_##_N)
 

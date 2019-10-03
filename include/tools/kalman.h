@@ -16,7 +16,7 @@ struct KalmanFilterData
 	Matrix Q; //Noise Matrix of Prediction Model
 	Matrix R; //Covariance matrix of observation noise
 	
-	int spaceBlockSize;
+	PRIVATE int spaceBlockSize;
 };
 typedef struct KalmanFilterData KalmanFilterData;
 #endif
